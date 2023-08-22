@@ -1,0 +1,11 @@
+
+
+
+
+.hidden-content {
+    display: none;
+}
+
+.hidden-content.revealBtn {
+    display: block;
+}
