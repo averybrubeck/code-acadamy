@@ -24,3 +24,19 @@ for (i = 0; i < listItems.length; i++) {
     listItems[i].style.fontSize = '5rem';
 }
 console.log(listItems);
+
+
+
+//CREATING NEW ELEMENTS IN HTML DOM
+const ul = document.querySelector('ul');
+const newLi = document.createElement('li');
+//grab ul and append it with newLI to make a new li
+ul.append(newLi);
+//modify/add text to new element set attribute adds ID class lists adds to class
+newLi.textContent = 'Movier';
+//newLi.setAttribute('id', 'list-item');
+//styles not applying due to for loop at top
+newLi.classList.add('list-item')
+
+//remove element from DOM
+newLi.remove();
