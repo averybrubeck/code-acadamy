@@ -5,13 +5,22 @@
     //a <p> that says “ME TOO!”
 //Hint for this one: after creating the <div> with createElement, append the <h1> and <p> to it before adding it to the container.
 
-const container = document.querySelector('.container');
-const div = document.createElement('div');
-const p = document.createElement('p');
-const h = document.createElement('h1');
-const h2 = document.createElement('h2');
+// USE THIS since there is only one div this works, will need to get item by class/id or use query selector all for all div tags
+//const container = document.querySelector('div');
 
+//get element by id, created variable to mainipulate element
+//const title = document.getElementById('main-heading');
 
-h2.classList.add('anotherHeader');
-h2.textContent = 'This is Another header';
-container.append(h2);
+//const listItem = document.getElementsByClassName('list-item');
+
+//how to get item and restyle it through JS
+const title = document.querySelector('#main-heading');
+title.style.color = 'red'; 
+console.log(title);
+
+//in order to style list items you need a for loop to iterate through every item of the Array
+const listItems = document.querySelectorAll('.list-item');
+for (i = 0; i < listItems.length; i++) {
+    listItems[i].style.fontSize = '5rem';
+}
+console.log(listItems);

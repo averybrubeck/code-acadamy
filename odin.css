@@ -1,3 +1,24 @@
 body {
     background-color: blue;
 }
+
+ul {
+    list-style: none;
+    padding: 5px;
+}
+li {
+    padding: 2px;
+    margin: 5px;
+    background-color: aliceblue;
+}
+
+#main-heading {
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
